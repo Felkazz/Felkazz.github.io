@@ -27,7 +27,7 @@ function updateDate(elementID, dateString) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    getLastUpdateDate("http://thundermugen.com/last-updated.php").then(dateString => {
+    getLastUpdateDate("https://thundermugen.com/last-updated.php").then(dateString => {
         updateDate("thunder-mugen", dateString);
     });
     getLastUpdateDate("https://api.github.com/repos/Felkazz/Boosted-Survivors-Upgrades/commits").then(dateString => {
